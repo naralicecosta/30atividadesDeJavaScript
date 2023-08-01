@@ -1,0 +1,28 @@
+<!--Missão: calcular a média de venda á partir dos valores vendidos em cada um dos meses do 1 trim de 2028 de um vendendor
+objetivo: declarar variáveis / conversão de valores-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var vendedor = jan, fev, mar, media
+        //vamos pedir as informações e armazenar nessas variáveis
+        vendedor = prompt('informe o nome do vendendor')
+        jan = prompt ("informe o valor das vendas de janeiro")
+        fev = prompt ("informe o valor das vendas de janeiro")
+        mar = prompt ("informe o valor das vendas de janeiro")
+
+        //agora iremos calcular a média (jan+fev+mar)/2
+        media = alert(parseFloat(jan) + parseFloat(fev) + parseFloat(mar)/3)
+        //o parseFloat convert os valores para ponto flutuante (numero decimal)
+
+        //vamos exibir o resultado das contas
+        console.log("a media das vendas do " + vendendor + "no 1 Trim foi " + media )
+        alert("a media de vendas do " +vendedor + "no 1 trim foi " + media )
+    </script>
+</body>
+</html>

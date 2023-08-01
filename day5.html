@@ -1,0 +1,56 @@
+<!-- Missão 5: verificar se é dia, tarde ou noite e mostrar uma mensagem personalizada-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        //objeto date---- iremos declarar uma variável e descobrir a hora. Para isso, iremos criar um objeto date
+
+        var dataCompleta;
+        dataCompleta = new Date
+
+        dataCompleta.getDay() // dia da semana em número
+        dataCompleta.getDate() //dia do mes
+        dataCompleta.getMonth()
+        dataCompleta.getFullYear()
+        dataCompleta.getHours()
+        dataCompleta.getMinutes()
+        dataCompleta.getSeconds()
+
+        //MISSÃO: iremos considerar que antes do meio dia será bom dia e que antes das 18 sera boa tarde e antes das 00:00 sera boa noite
+
+        //criar uma variavel para armazenar a data completa e uma variavel para armazenar apenas a hora atual
+
+        var dataCompleta;
+        var horaAtual;
+        //agora vams criar a instancia do objetoDate e pegar a hora atual
+
+        dataCompleta = new Date();
+        horaAtual = dataCompleta.getHours();
+        
+        //iremos fazer a verificação para emitir a mensagem
+        if(horaAtual < 12){
+            alert("Bom dia")
+        } else if(horaAtual < 18){
+            alert("Boa tarde")
+        }else{
+            alert("boa noite")
+        }
+
+
+        //missão extra: verificar o dia e dizer se esta na primeira quinzena do mês.
+        var dataCompleta;
+        dataCompleta = new Date(); //dataCompleta.getDate()
+
+        if (dataCompleta <= 15 ) {
+            alert("estamos na primeira quinzena do mes!")
+        }else{
+            alert("ja passamos da primeira quinzena!")
+        }
+    </script>
+</body>
+</html>

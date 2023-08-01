@@ -1,0 +1,45 @@
+<!--calcular as horas extras de um funcionário a partir das horas semanais trabalhadas. 
+Considerar a carga horaria do funcionário de 44 horas por semana-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var cargaHorariaSemanal = 44;
+        var saldoHoras = 0; //usuário que vai informar
+
+        var horasTrabalhadas = prompt("Informe o total de horas trabalhadas do funcionário nessa semana: ")
+
+        //agora vamos calcular o saldo de horas
+        saldoHoras =   horasTrabalhadas - cargaHorariaSemanal;
+        if(saldoHoras > 0){
+            alert("o funcionário fez " + saldoHoras + " horas extras nesta semana.")
+        }else if(saldoHoras < 0){
+            alert("o funcionário esta devendo " + (saldoHoras * -1 ) +" horas nesta semana")
+        }
+
+        
+
+        //missão extra: iremos fazer cargas diária mensal do funcionário
+
+        var nome = prompt("digite o nome do funcionário")
+
+        var cargaDiasMensais = 28;
+        var saldoDias = 0;
+
+        var diasTrabalhados = prompt("Informe quantos dias trabalhou no mês")
+        
+        //calcular22
+        saldoDias = diasTrabalhados - cargaDiasMensais;
+        if(saldoDias > 0 ){
+            alert("O funcionário  "+ nome  + "fez " + saldoDias + " dias extras este mês")
+        }else if(saldoDias < 0 ){
+            alert("o funcionário " + nome + " esta devendo " + (saldoDias * -1) + " dias neste mês")
+        }
+    </script>
+</body>
+</html>
