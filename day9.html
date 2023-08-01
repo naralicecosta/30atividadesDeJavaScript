@@ -1,24 +1,24 @@
 <!--Missão: verificando confirmação para o usuário             objetivo: estrutura de decisão switch-->
 
 <script>
-    //Confirm: o comando confirm cria uma janela parecida com o promp, porém nesta janela existem apenas dois botões: ok e cancelar
+  //Confirm: o comando confirm cria uma janela parecida com o promp, porém nesta janela existem apenas dois botões: ok e cancelar
 
-    confirm("Deseja salvar o arquivo?")
-    //se clicar ok, o retorno sera true. se clicar cancelar o retorno sera false. vamos armazenar o retorno em uma variável.
+  confirm("Deseja salvar o arquivo?")
+  //se clicar ok, o retorno sera true. se clicar cancelar o retorno sera false. vamos armazenar o retorno em uma variável.
 
-    var decisao = confirm("Deseja enviar o arquivo?")
-    decisao;
+  var decisao = confirm("Deseja enviar o arquivo?")
+  decisao
 
-    //missão: vamos fazer uma pergunta para o usuário utilizando o comenado confirm e de acordo com o botão 
-    //que ele presionar mostraremos uma mensagem
+  //missão: vamos fazer uma pergunta para o usuário utilizando o comenado confirm e de acordo com o botão
+  //que ele presionar mostraremos uma mensagem
 
-    //criar uma variavel que armazene o resultado do comando confirm
-    var continuar = confirm("Deseja continuar essa operação?")
-    //agora vamos verificar qual foi o botão pressionado utilizando a estrutura de decisão if
+  //criar uma variavel que armazene o resultado do comando confirm
+  var continuar = confirm("Deseja continuar essa operação?")
+  //agora vamos verificar qual foi o botão pressionado utilizando a estrutura de decisão if
 
-    if(continuar == true){
-        alert("você clicou no botão OK. Vamos continuar a operação")
-    }else{
-        alert("Você clicou no botão CANCELAR. Vamos cancelar a operação.")
-    }
+  if (continuar == true) {
+    alert("você clicou no botão OK. Vamos continuar a operação")
+  } else {
+    alert("Você clicou no botão CANCELAR. Vamos cancelar a operação.")
+  }
 </script>

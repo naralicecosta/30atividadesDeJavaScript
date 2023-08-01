@@ -1,38 +1,38 @@
 //<!--Missão: efetuar uma das 4 operações matemáticas básicas-->
 <script>
+  var numero1 = prompt("digite um número")
+  var numero2 = prompt("digite mais um número")
 
-    var numero1 = prompt("digite um número")
-    var numero2 = prompt("digite mais um número")
+  var operacao = prompt(
+    "informe o operador: \nAdição(+) \nSubtração(-) \nMultiplicação(*) \nDivisão(\\)"
+  )
+  var resultado
 
-    var operacao = prompt("informe o operador: \nAdição(+) \nSubtração(-) \nMultiplicação(*) \nDivisão(\\)")
-    var resultado;
+  //agora vamos verificar qual operação foi escolhida e executar a operação.
 
+  switch (operacao) {
+    case "+":
+      resultado = parseFloat(numero1) + parseFloat(numero2)
+      break
 
-    //agora vamos verificar qual operação foi escolhida e executar a operação.
+    case "-":
+      resultado = parseFloat(numero1) - parseFloat(numero2)
+      break
 
-    switch(operacao){
-        case "+":
-            resultado = parseFloat(numero1) + parseFloat (numero2);
-            break;
+    case "*":
+      resultado = parseFloat(numero1) * parseFloat(numero2)
+      break
 
-        case "-":
-            resultado = parseFloat(numero1) - parseFloat (numero2);
-            break;
+    case "/":
+      resultado = parseFloat(numero1) / parseFloat(numero2)
+      break
 
-        case "*":
-            resultado = parseFloat(numero1) * parseFloat (numero2);
-            break;
+    default:
+      alert("Operação inválida")
+      break
+  }
 
-        case "/":
-            resultado = parseFloat(numero1) / parseFloat (numero2);
-            break;
+  //por final vamos apresentar o resultado
 
-            default:
-                alert("Operação inválida");
-                break;
-    }
-
-    //por final vamos apresentar o resultado
-
-    alert("o resultado é " + resultado)
+  alert("o resultado é " + resultado)
 </script>
