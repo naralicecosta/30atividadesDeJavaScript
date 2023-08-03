@@ -1,0 +1,24 @@
+<!--Missão: calcular a media N dos alunos.
+ao apresentar o resultado, o programa deve perguntar se gostaria de calcular a media de outro aluno. caso a resposta seja sim, o programa deve executar novamente. -->
+
+<script>
+  //vamos declarar as variaveis que irão armazenar o nome, notas e a media do aluno
+  var nome, nota1, nota2, noa3, nota4, media
+  //agora vamos declarar a variável que vai armazenar a resposta do usuário ue sera true ou false.
+  var resposta = true
+  while (resposta == true) {
+    nome = prompt("Informe o nome do aluno(a)")
+    nota1 = prompt("Informe a nota do 1Bim")
+    nota2 = prompt("Informe a nota do 2Bim")
+    nota3 = prompt("Informe a nota do 3Bim")
+    nota4 = prompt("Informe a nota do 4Bim")
+    media =
+      (parseFloat(nota1) +
+        parseFloat(nota2) +
+        parseFloat(nota3) +
+        parseFloat(nota4)) /
+      4
+    alert("O estudante " + nome + " obteve a media " + media)
+    resposta = confirm("calcular a media de outro aluno?")
+  }
+</script>

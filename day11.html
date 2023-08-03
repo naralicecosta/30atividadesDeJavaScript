@@ -1,0 +1,42 @@
+<!--Missão: exibindo uma mensagem várias vezes
+Objetivo: laço de repetição: while
+. 
+O laço de repetição permite que você repita uma série de instruções até a condição para o laço de tornar falsa-->
+
+<script>
+  var contador = 1
+  while (contador <= 5) {
+    console.log("Bom dia")
+    contador = contador + 1
+  }
+  /*entendendo o que aconteceu: na linha var contador declaramos uma variável que vai servir para controlar quantas vezes o laço de repetição foi executado.
+      A cada vez que o laço executar, na ultima linha dentro do çaõ existe o comando contador = contador + 1; que acrescenta mais um á essa variável de controle.
+      essa variável começa o programa valendo 1, mas depois de executar o laço uma vez ela vale 2, depois 3 e assim sucessivamente.
+      
+      depois do while(contador<=5){ aqui é a condição que deve ser satisfeita para que os comandos dentro do laço sejam executados.
+      o contador começa valendo 1, como 1 é menor ou igual á 5 ele entra no laço e realiza um loop, a cada loop aumenta 1 no valor da variável contador, depois de 5 loops o contador tem o valor 6, o que faz com que a condição seja falsa e o laço de repetição não seja executado.
+      
+      esse é o laço de repetição chamado enquanto...faça, ou seja enquanto a docição for verdadeira faça o que estiver dentro do laço
+      ---------------------------
+      
+      vamos criar uma outra situação, quero uma contagem regressiva, começando em 10 e depois que chegar a zero apareça a mensagem "OLHA A EXPLOSAO*/
+
+  var contador = 10
+  while (contador >= 0) {
+    console.log("....." + contador + "......")
+    contador = contador - 1
+  }
+  console.log("OLHA A EXPLOSÃO!")
+
+  /*Missão: repetir uma mesma frase uma certa quantidade de vezes*/
+  var contador = 1
+  var numeroRepeticao = prompt(
+    "Informe o número de vezes que a mensagem deve aparecer"
+  )
+
+  //vamos criar o laço
+  while (contador <= numeroRepeticao) {
+    console.log("mensagem numero " + contador)
+    contador = contador + 1
+  }
+</script>

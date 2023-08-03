@@ -1,0 +1,25 @@
+<!--
+  Missão: calcular a media de N números
+
+  o programa vai calcular a media de quantos números o usuário quiser digitar.
+-->
+<script>
+  var quantidadeNumeros = 0 //armazenar a quantidade de numeros
+  var novoNumero = "S" // armazenar se o usuário vai inserir novo numero
+  var media = 0 // armazenar a media
+  var somaNumeros = 0 //armazenar a soma total dos números digitados
+  var numero = 0 //armazenar o numero atual digitado
+
+  //agora vamos criar o laço de repetição onde terá as instruções perguntando o número novo, somando esse novo número ao total ja existente aumentando em 1 a quantidade de números digitados e perguntando se o usuário deseja digitar mais um número
+
+  while (novoNumero == "S") {
+    numero = prompt("Informe um número")
+    somaNumeros = parseFloat(somaNumeros) + parseFloat(numero)
+    quantidadeNumeros = quantidadeNumeros + 1
+    novoNumero = prompt("deseja informar mais um número? \n[S]im \n[N]ão")
+  }
+
+  //agora vamos calcular a media e exibir o resultado
+  media = somaNumeros / quantidadeNumeros
+  alert("A media dos numeros informados é " + media)
+</script>

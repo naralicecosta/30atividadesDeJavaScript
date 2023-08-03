@@ -1,0 +1,48 @@
+<!--
+  Missão: armazenando lista de carros de um estacionamento
+  objetivo: utilizando arrary / laço de repeitção while
+-->
+<script>
+  //array é um tipo de variável para armazenar multiplos valores
+
+  //para criarmos um array, a sintaxe é:
+  //var nome_array = [valor1, valor2, valor3, valor5, valor]
+
+  var alunos = ["nara", "alison", "nathy", "dobby"]
+
+  //se eu quiser trocar o nome de nathy para silvia eu preciso acesar a posição 2 do array alunos e substituir o valor. assim:
+  alunos[2] = "silvia"
+
+  //para mostrar cada nome disponível no array alunos basta eu utilizar o comando console.log utilizando cada uma das posições do array alunos.
+  /*console.log(alunos[0])
+  console.log(alunos[1])
+  console.log(alunos[2])
+  console.log(alunos[3])
+  console.log(alunos[4])*/
+
+  //podemos utilizar laço de repetição e melhorar a exibição
+  var contador = 0
+  while (contador <= 3) {
+    console.log(alunos[contador])
+    contador++
+  }
+
+  //--------------------------------------------
+  //Missão: armazenar uma lista de carros de um estacionamento
+  var carros = ["carro1", "carro2", "carro3", "carro4", "carro5"]
+  var contador = 0
+
+  //criar laço de repetição responsável por popular o array de carros com os modelos dos carros
+  while (contador <= 4) {
+    carros[contador] = prompt("Informe o modelo do carro n " + contador)
+    contador++
+  }
+  //agora vamos zerar novamente a variável contador pra que ela possa ser utilizada para criar um outro loop
+  contador = 0
+
+  //vamos criar um laço de repetição responsavel por exibir os carros no console
+  while(contador <= 4){
+    console.log("Modelo n" + contador +" :" + carros[contador])
+    contador++
+  }
+</script>

@@ -1,0 +1,30 @@
+<!--
+  missão: criar um contador
+  objetivo: laço de repetição(while)
+  operadores de incremento e decremento
+-->
+<script>
+  //vamos criar um contador que vai de 0 a 10 aumentando de um em um, e depois volta de 10 a 0 diminuindo de um em um.
+  //quando queriamos aumentar de um em um usavamos contador = contador+1 e quando queriamos diminuir usamos contador = contador 01.
+
+  //porem existem operadores específicos para incrementar (+1) e decrementar (-1) valores, são os operadores ++ e -- são eles que utilizaremos nessa missão.
+
+  //primeiro vamos declarar as duas variáveis que vão servir como contadores, uma que deverá aumentar e outra que deverá diminuir
+
+  var contador = 0
+  var contador2 = 10
+
+  //agora o laço de repetição que vai mostrar de 0 a 10
+  alert("vamos aumentar")
+  while (contador <= 10) {
+    console.log(contador)
+    contador++
+  }
+
+  //laço de repetição que mosra de 10 a 0 diminuindo de 10 a 0 por causa da instrução contador2
+  alert("vamos diminuir")
+  while (contador2 >= 0) {
+    console.log(contador2)
+    contador2--
+  }
+</script>
