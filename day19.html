@@ -1,0 +1,27 @@
+<!--missão:controle de cursos
+vai informar o nome do curso, o codigo do curso e o conteudo-->
+<script>
+  var nomeCurso = prompt("Informe o nome do curso")
+  var codigoCurso = prompt("Informe o codigo do curso")
+  var novoConteudo = "S"
+  var conteudoTemp = " "
+  var conteudoCurso = []
+  var contador = 0
+
+  while (novoConteudo == "S") {
+    conteudoTemp = prompt("Informe o conteudo do curso")
+    conteudoCurso.push(conteudoTemp)
+    novoConteudo = prompt(
+      "Deseja cadastrar um novo conteudo para o curso? [S]im / [N]ão"
+    )
+
+    console.clear()
+    console.log("codigo: " + codigoCurso)
+    console.log("Curso: " + nomeCurso)
+    console.log("Conteudo")
+    while (contador < conteudoCurso.length) {
+      console.log(conteudoCurso[contador])
+      contador++
+    }
+  }
+</script>

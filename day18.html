@@ -1,0 +1,58 @@
+<!--
+  Missão: dicionário de animais
+  objetivo: array, laço de repetição, estrutura de decição
+  
+  criar um programa onde o usuário escolhe um animal e são exibidas alguams informações desse animal
+-->
+<script>
+  var continuar = "S" //controlar a exibição
+  var animalExibir //armazenar a opção do animal a ser exibido
+  var animais = new Array(4) //array que vai armazenar as informações dos animais
+
+  animais[0] =
+    "Cuidado, a picada de uma radioativa pode transformar em super-heroi"
+  animais[1] = "Escorpião é o oitavo signo astrológico do zodíaco"
+  animais[2] =
+    "Cobra é uma denominação genérica, utilizada frequentemente na lingua portuguesa como sinonimo de serpente"
+  animais[3] =
+    "Na linguagem vulgar, chama-se lagarta ao primeiro estágio larval dos insetos da ordem dos lepidoptera"
+
+  //vamos criar o laço de exibição e a estrutura de decisão que vaii verificar a opção escolhida para exibir as informações dos animais
+
+  while (continuar == "S") {
+    console.clear()
+
+    animalExibir = prompt(
+      "escolha uma opção abaixo: \n[0] Aranha \n[1] Escorpião \n[2] Cobra \n[3] Lagarta"
+    )
+
+    switch (animalExibir) {
+      case "0":
+        alert("aranha")
+        alert(animais[animalExibir])
+        break
+
+      case "1":
+        alert("Escorpião")
+        alert(animais[animalExibir])
+        break
+
+      case "2":
+        alert("Cobra")
+        alert(animais[animalExibir])
+        break
+
+      case "3":
+        alert("Lagarto")
+        alert(animais[animalExibir])
+        break
+
+      default:
+        alert("Opção inválida")
+        break
+    }
+    continuar = prompt("Deseja ver outro animal? [S]im / [N]]ão")
+  }
+  console.clear
+  console.log("Obrigado!")
+</script>
