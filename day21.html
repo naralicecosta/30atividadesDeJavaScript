@@ -1,0 +1,26 @@
+<!--
+  Missão: criando uma agenda de contatos
+-->
+<script>
+  var nomes = []
+  var telefones = []
+  var cidades = []
+  var novoConato = "S"
+  var contador = 0
+
+  while (novoConato == "S") {
+    nomes[contador] = prompt("Informe o nome", "")
+    telefones[contador] = prompt("Informe o telefone", "")
+    cidades[contador] = prompt("Informe a cidade", "")
+    novoConato = prompt("Cadastrar novo contato? [S]im / [N]ão", "")
+    contador++
+  }
+
+  //por fim crie os laços que exibe as informações cadastradas
+  for (i = 0; i < nomes.length; i++) {
+    console.log("Nome: " + nomes[i])
+    console.log("Telefones: " + telefones[i])
+    console.log("Cidade: " + cidades[i])
+    console.log("--------")
+  }
+</script>

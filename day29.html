@@ -1,0 +1,32 @@
+<!--
+  missão: classificação de filmes
+
+  sistema de qualificação de filmes onde mostrados o filme e o usuário da ua nota de 1 á 5. depois exibimos o filme e a sua classificação com estrelas(asteriscos)
+-->
+<script>
+  var classificação = []
+  var filmes = ["Conan", "harry potter", "matrix", "crepusculo"]
+
+  function Classificacao() {
+    alert("Informe uma classificação de 1 a 5 estrelas para cada filme")
+    for (contador = 0; contador < filmes.length; contador++) {
+      Classificacao[contador] = prompt(
+        "Informe a quantidade de estrelas para os filmes " + filmes[contador]
+      )
+    }
+  }
+  function ExibirClassificacoes() {
+    var numEstrelas = " "
+    for (contador = 0; contador < filmes.length; contador++) {
+      numEstrelas = ""
+      for (
+        contadorEstrelas = 1;
+        contadorEstrelas <= classificacao[contador];
+        contadorEstrelas++
+      ) {
+        numEstrelas += "*"
+      }
+      console.log(filmes[contador] + "" + numEstrelas + " estrelas")
+    }
+  }
+</script>

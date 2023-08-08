@@ -1,0 +1,19 @@
+<!--
+  Missão: acrescimo e desconto.
+
+  criar uma função que receba 3 parametros: o valor total, uma porcentagem, e a operação. se a operação for o acrescimo a porcentagem deve ser acrescida ao valor total, se a operação for desconto, a porcentagem deve ser contada ao valor total.
+-->
+<script>
+  function operacao(total, porcentagem, operacao){
+    var valor_porcentagem = porcentagem/100 * total;
+    var total_pagar = 0
+    if(operacao == "acrescimo"){
+      //acrescimo
+      total_pagar = total + valor_porcentagem
+    }else{
+      //desconto
+      total_pagar = total - valor_porcentagem
+    }
+    console.log("Total a pagar: R$ "+ total_pagar.toFixed(2))
+  }
+</script>

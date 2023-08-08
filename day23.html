@@ -1,0 +1,33 @@
+<!--
+  missão: refinando nosso calculo de média.
+  pedir o nome do aluno e 4 notas para calcular a média, porém vamos verificar se cada uma das notas digitadas é realmente um número, caso não seja iremos pedir que o usuário informe a nota novamente. tambem iremos utilizar um comando para limitar a media a uma casa decimal
+-->
+<script>
+  var media = 0,
+    nota = 0
+  contador = 0
+  var nome = prompt("Informe o nome do aluno")
+
+  while (contador < 4) {
+    nota = prompt("Informe a nota do aluno")
+    //isNaN verifica se o conteudo dentro dos parenteses não é um número, caso não seja um número ele executa as instruções da parte true do if
+    if (isNaN(nota)) {
+      alert("Você não digitou um número válido")
+    } else {
+      media = parseFloat(media) + parseFloat(nota)
+      contador++
+    }
+  }
+
+  //vamos fazer o calculo da média e apresenta-lo na tela
+  media = media / 4
+  document.write("A média de " + nome)
+  document.write(" é : " + media.toFixed(1)) //toFixed(1) faz com que a mdia seja apresentado utilizando apenas uma casa decimal
+
+  //incremento meu!!(estou feliz!!)
+  if (media >= 7) {
+    alert("O(A) aluno(A) passou!!")
+  } else {
+    alert("Bem vindo(a) recuperação!!")
+  }
+</script>

@@ -1,0 +1,35 @@
+<!--
+  missão: tornar o calculo da média reutilizável
+
+  funções: de um jeito bem simples é quando você pega um conjunto de instruções e da um nome de modo que toda vez que você chame por esse nome sejam executadas aquelas instruções
+
+
+function Multiplicacao() {
+    var resultado = 0
+    var n1 = prompt("Informe o primeiro número")
+    var n2 = prompt("Informe o segundo número")
+    resultado = n1 * n2
+    document.write("O resultado é " + resultado)
+  }-->
+<script>
+  function Media() {
+    var media = 0,
+      nota = 0,
+      contador = 0
+    var nome = prompt("Informe o nome do aluno")
+
+    while (contador < 4) {
+      nota = prompt("Informe a nota do aluno")
+      if (isNaN(nota)) {
+        alert("voce não digitou um número válido")
+      } else {
+        media = parseFloat(media) + parseFloat(nota)
+        contador++
+      }
+    }
+    media = media / 4
+    document.write("Aluno(a) :" + nome)
+    document.write("<br>")
+    document.write("Media...: " + media)
+  }
+</script>
